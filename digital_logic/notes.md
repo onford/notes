@@ -1,52 +1,12 @@
-<style>
-    h1,h2{
-        border-bottom : none;
-        font-family: "Times New Roman","宋体";
-    }
-    p,div{
-        font-family: "Times New Roman","宋体";
-        font-size:17px;
-    }
-    bw{
-        font-family: "Times New Roman","仿宋";
-        font-size:17px;
-    }
-    st{
-        font-family:"Times New Roman","宋体";
-        color: red;
-    }
-    blockquote{
-        font-family:"Times New Roman","仿宋";
-        font-size:17px;
-        border-left: 5px solid lightblue;
-    }
-    table,th,td{
-        font-size:17px;
-        font-family:"Times New Roman","宋体";
-        border: 1px solid;
-        text-align:center;
-    }
-    caption{
-        font-family:"Times New Roman","黑体";
-        font-size:17px;
-    }
-    img{
-        margin: 0 auto;
-        left:50%;
-        right:50%;
-        width: 30%;
-    }
-</style>
-
 # **数字电路与逻辑设计笔记** 
-<bw>wr按：\
-这一部笔记，主要记录学习过程中的一些想法，以便后续查看时能回忆起当时的理解，并加深印象。</bw>
+wr按：\
+这一部笔记，主要记录学习过程中的一些想法，以便后续查看时能回忆起当时的理解，并加深印象。
 
-## $Chapter 1 $ &emsp;数字电路与逻辑设计基础 
+## $Chapter 1$ &emsp;数字电路与逻辑设计基础 
 &emsp;&emsp;首先来看看带符号二进制数的算术运算。我们知道，正数的三个机器码（原码、反码、补码）是一样的，只有负数才需要变换。不过，一个正数与一个负数的原码貌似是<st>不能直接进行加减运算的</st>。反码运算时，进位加到最低位（循环进位）；补码运算就直接舍弃进位了。当然，这样运算正确的前提是<st>不发生溢出</st>。
 <blockquote>
     &emsp;&emsp;反码、补码加减为什么可以这样运算？这里对其正确性提供一些想法。
-    <br/>&emsp;&emsp;对于两个二进制整数$a_1$和$a_2$，设其二进制补码均有$n$位，分别用$A_1$和$A_2$表示。如果把补码看作无符号二进制数，显然有:
+    <br/>&emsp;&emsp;对于两个二进制整数 $a_1$ 和 $a_2$ ，设其二进制补码均有$n$位，分别用$A_1$和$A_2$表示。如果把补码看作无符号二进制数，显然有:
     $$A_i=\begin{cases}
     a_i & a_i\geq 0\\
     2^n+a_i & a_i < 0
