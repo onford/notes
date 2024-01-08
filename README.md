@@ -1,5 +1,5 @@
 # HUST_CS学习笔记
-本仓库目前包含 $3$ 个部分的内容：\
+本仓库目前包含 $4$ 个部分的内容：\
 $1$.数字电路与逻辑设计\
 $2$.大学物理\
 $3$.算法设计\
@@ -15,4 +15,6 @@ $2$. University Physics\
 $3$. Algorithm Design\
 $4$. Circuit Theory\
 \
-Any advice, please contact me. 3Q
+Any advice, please contact me. 3Q\
+\
+Github的markdown preview不知道为什么感觉总是炸，为保证良好观感请前往本仓库的静态网页。
